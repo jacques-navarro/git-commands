@@ -36,4 +36,15 @@ git cheat sheet
 git restore <file> discard changes to files which have not been staged
 --staged <file> unstages files from staging
 
-##Viewing commit history
+##Working with remotes
+
+**git remote** displays which remote servers have been configured
+-v displays URLs stored in git for fetching and pulling
+add <short name> <URL> adds new remote repository with specified short name
+show <short name> displays URL and branch information
+
+**git fetch** <short name>[/branch name] pulls down all data that you don't have yet from a remote repo
+pull downloads and merges remote into current code
+
+**git push** <short name> <branch name> only works if another commit hasn't been pushed to remote
+
