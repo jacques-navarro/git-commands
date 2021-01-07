@@ -55,3 +55,9 @@ pull downloads and merges remote into current code
 
 **git checkout** <branch name> - switch to an existing branch
 -b <branch name> - create a new branch and switch to it automatically
+-d <branch name> - delete branch
+
+##Merging
+Switch to branch you would like to merge changes into. **git checkout** <branch name>
+
+**git merge** <branch name> merge branch into current branch
