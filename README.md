@@ -52,10 +52,10 @@ pull downloads and merges remote into current code
 ##Working with branches
 
 **git branch** <branch name> - creates a new branch
+-d <branch name> - delete branch
 
 **git checkout** <branch name> - switch to an existing branch
 -b <branch name> - create a new branch and switch to it automatically
--d <branch name> - delete branch
 
 ##Merging
 Switch to branch you would like to merge changes into. **git checkout** <branch name>
