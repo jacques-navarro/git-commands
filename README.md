@@ -7,7 +7,7 @@ git cheat sheet
 
 **git clone** <url> [directory] clones a repository
 
-##Getting info
+## Getting info
 
 **git status** displays current branch, untracked files, modified files, added files
 
@@ -18,7 +18,7 @@ git cheat sheet
 -p (patch) shows difference introduced by each commit
 -<n> shows last nth commits
 
-##Making changes
+## Making changes
 
 **git add** <file> stages new files and tracked files that have been modified
 
@@ -31,13 +31,13 @@ git cheat sheet
 
 **git mv <original file> <renamed file>** move/rename a file or rename
 
-##Undoing things
+## Undoing things
 
 **git reset HEAD** <file> unstage files
 
 **git checkout** -- <file> discard files which are not staged
 
-##Working with remotes
+## Working with remotes
 
 **git remote** displays which remote servers have been configured
 -v displays URLs stored in git for fetching and pulling
@@ -49,7 +49,7 @@ pull downloads and merges remote into current code
 
 **git push** <short name> <branch name> only works if another commit hasn't been pushed to remote
 
-##Working with branches
+## Working with branches
 
 **git branch** <branch name> - creates a new branch
 -d <branch name> - delete branch
@@ -57,7 +57,7 @@ pull downloads and merges remote into current code
 **git checkout** <branch name> - switch to an existing branch
 -b <branch name> - create a new branch and switch to it automatically
 
-##Merging
+## Merging
 Switch to branch you would like to merge changes into. **git checkout** <branch name>
 
 **git merge** <branch name> merge branch into current branch
