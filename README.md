@@ -33,8 +33,9 @@ git cheat sheet
 
 ##Undoing things
 
-git restore <file> discard changes to files which have not been staged
---staged <file> unstages files from staging
+**git reset HEAD** <file> unstage files
+
+**git checkout** -- <file> discard files which are not staged
 
 ##Working with remotes
 
