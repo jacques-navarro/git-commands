@@ -51,5 +51,6 @@ pull downloads and merges remote into current code
 ##Working with branches
 
 **git branch** <branch name> - creates a new branch
-checkout <branch name> - switch to an existing branch
--b checkout <branch name> - create a new branch and switch to it automatically
+
+**git checkout** <branch name> - switch to an existing branch
+-b <branch name> - create a new branch and switch to it automatically
