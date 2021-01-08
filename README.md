@@ -1,11 +1,11 @@
-7# git-commands
+# git-commands
 git cheat sheet
 
 ## Getting a repository
 
 `git init` initializes a repository
 
-`git clone` <url> [directory] clones a repository
+`git clone <url> [directory]` clones a repository
 
 ## Getting info
 
