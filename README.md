@@ -59,9 +59,21 @@ git cheat sheet
 `--move <old branch name> <new branch name>` rename branch (must use `git push --set-upstream origin <new branch name>` to set up branch on remote and `git push origin --delete <old branch name>` to delete old branch on remote)  
 
 `git checkout <branch name>` - switch to an existing branch  
-`-b <branch name>` - create a new branch and switch to it automatically  
+`-b <branch name>` - create a new branch and switch to it automatically     
 
 ## Merging
 Switch to branch you would like to merge changes into. `git checkout <branch name>`
 
 `git merge <branch name>` merge branch into current branch  
+
+## First time setup
+
+`git config --list --show-origin` view all settings    
+`--global user.name <user name>` set user name    
+`--global user.email <user email>` set user email address    
+`--global core.editor <text editor name>` set default text editor    
+`<setting>` check setting    
+
+
+## Getting help
+`git help <verb>` 
