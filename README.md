@@ -51,15 +51,19 @@ git cheat sheet
 
 ## Working with branches
 
-`git branch <branch name>` - creates a new branch  
-`-d <branch name>` - delete branch  
+`git branch` - lists all branches
+`git <branch>` - creates a new branch  
+`-d <branch>` - delete branch which has been merged  
+`-D <branch> - delete branch that has not been merged  
 `-v` display last commit on each branch  
 `--merged` display only branches which have been merged into current branch  
 `--no-merged` display only branches which have not been merged into the current branch  
 `--move <old branch name> <new branch name>` rename branch (must use `git push --set-upstream origin <new branch name>` to set up branch on remote and `git push origin --delete <old branch name>` to delete old branch on remote)  
+`-m <old name> <new name>` - rename branch
 
-`git checkout <branch name>` - switch to an existing branch  
-`-b <branch name>` - create a new branch and switch to it automatically     
+`git checkout <branch | sha1>` - switch to an existing branch | commit  
+
+`git switch -c <branch name>` - create a new branch and switch to it automatically     
 
 ## Merging
 Switch to branch you would like to merge changes into. `git checkout <branch name>`
