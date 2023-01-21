@@ -5,7 +5,7 @@ git cheat sheet
 
 `git init` initializes a repository
 
-`git clone <url> [directory]` clones a repository
+`git clone <url> [directory]` clones a repository into the current directory
 
 ## Getting info
 
@@ -45,16 +45,17 @@ git cheat sheet
 `show <short name>` displays URL and branch information  
 
 `git fetch <short name>/[branch name]` pulls down all data that you don't have yet from a remote repo  
-`pull` downloads and merges remote into current code
+
+`git pull` downloads and merges remote into current code
 
 `git push [short name] [branch name]` only works if another commit hasn't been pushed to remote
 
 ## Working with branches
 
-`git branch` - lists all branches
+`git branch` - lists all branches  
 `git <branch>` - creates a new branch  
 `-d <branch>` - delete branch which has been merged  
-`-D <branch> - delete branch that has not been merged  
+`-D` <branch> - delete branch that has not been merged  
 `-v` display last commit on each branch  
 `--merged` display only branches which have been merged into current branch  
 `--no-merged` display only branches which have not been merged into the current branch  
