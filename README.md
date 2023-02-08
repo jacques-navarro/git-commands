@@ -41,7 +41,8 @@ git cheat sheet
 
 `git remote` displays which remote servers have been configured  
 `-v` displays URLs stored in git for fetching and pulling  
-`add <short name> <URL>` adds new remote repository with specified short name  
+`add <short name> <URL - https://github.com/bunny-thief/repo_name.git>` adds new remote repository with specified short name  
+`remove <short name>` remove remote
 `show <short name>` displays URL and branch information  
 
 `git fetch <short name>/[branch name]` pulls down all data that you don't have yet from a remote repo  
@@ -51,6 +52,15 @@ git cheat sheet
 `git push [short name] <branch name>` only works if another commit hasn't been pushed to remote  
 `git push --set-upstream [short name] <new branch name>` to set up branch on remote  
 `git push [short name] --delete <branch name>` to delete branch on remote  
+
+### Push existing repo from command line
+1. Create local repo and commit changes  
+2. Create Github repo  
+ * Don't add README, license or .gitignore files  
+3. Add remote  
+ * `git remote add origin git@github.com:bunny-thief/<repo name>.git`  
+4. Set up remote upstream  
+ * `git push -u [short name] <branch name>`  
 
 ## Working with branches
 
