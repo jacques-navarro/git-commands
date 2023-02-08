@@ -48,8 +48,8 @@ git cheat sheet
 
 `git pull` downloads and merges remote into current code
 
-`git push [short name] [branch name]` only works if another commit hasn't been pushed to remote  
-`git push --set-upstream origin <new branch name>` to set up branch on remote  
+`git push [short name] <branch name>` only works if another commit hasn't been pushed to remote  
+`git push --set-upstream [short name] <new branch name>` to set up branch on remote  
 `git push [short name] --delete <branch name>` to delete branch on remote  
 
 ## Working with branches
@@ -63,8 +63,8 @@ git cheat sheet
 `--merged` display only branches which have been merged into current branch  
 `--no-merged` display only branches which have not been merged into the current branch  
 `--move <old branch name> <new branch name>` rename branch  
-    * `git push --set-upstream origin <new branch name>` to set up branch on remote  
-    * `git push origin --delete <old branch name>` to delete old branch on remote  
+  * `git push --set-upstream [short name] <new branch name>` to set up branch on remote  
+  * `git push origin --delete <old branch name>` to delete old branch on remote  
 
 `git checkout <branch | sha1>` - switch to an existing branch | commit  
 
