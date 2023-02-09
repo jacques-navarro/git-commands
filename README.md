@@ -80,10 +80,16 @@ git cheat sheet
 
 `git switch -c <branch name>` - create a new branch and switch to it automatically     
 
-## Merging
+### Merging
 Switch to branch you would like to merge changes into. `git checkout <branch name>`
 
 `git merge <branch name>` merge branch into current branch  
+
+### Rebasing
+1. `git checkout <branch to rebase>`  
+2. `git rebase master`  
+3. `git checkout master`
+3. `git merge <branch to rebase>`
 
 ## First time setup
 
