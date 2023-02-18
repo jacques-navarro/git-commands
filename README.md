@@ -16,7 +16,10 @@ git cheat sheet
 
 `git log` lists commits in reverse chronological order  
 `-p` (patch) shows difference introduced by each commit  
-`-<n>` shows last nth commits  
+`-<n>` shows last nth commits 
+
+`git show --abbrev-commit --name-status [HEAD~n]` displays which files were modified in specific commit  
+A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 
 ## Making changes
 
