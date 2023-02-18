@@ -56,6 +56,7 @@ git cheat sheet
 ### Push existing repo from command line
 1. Create local repo and commit changes  
 2. Create Github repo  
+ * Remote repo name **must match** local repo name  
  * Don't add README, license or .gitignore files  
 3. Add remote  
  * `git remote add origin git@github.com:bunny-thief/<repo name>.git`  
