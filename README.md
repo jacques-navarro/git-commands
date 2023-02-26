@@ -30,7 +30,8 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 `-a` skips staging area and commits any tracked files that have been modified  
 `--ammend` undoes last commit and returns to staging  
 
-`git rm` remove files that are currently been track
+`git rm <file name>` remove files from working tree and index  
+`--cached` remove file from index only
 
 `git mv <original file> <renamed file>` move/rename a file or rename
 
