@@ -12,7 +12,8 @@ git cheat sheet
 `git status` displays current branch, untracked files, modified files, added files
 
 `git diff` displays what has been modified but not staged  
-`--staged` displays the what has been staged compared to the last commit
+`--staged` displays the what has been staged compared to the last commit  
+`<hash 1> <hash 2> [file]` display difference between two commits  
 
 `git log` lists commits in reverse chronological order  
 `-p` (patch) shows difference introduced by each commit  
@@ -46,7 +47,7 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 `git remote` displays which remote servers have been configured  
 `-v` displays URLs stored in git for fetching and pulling  
 `add <short name> <URL - https://github.com/bunny-thief/repo_name.git>` adds new remote repository with specified short name  
-`remove <short name>` remove remote
+`remove <short name>` remove remote  
 `show <short name>` displays URL and branch information  
 
 `git fetch <short name>/[branch name]` pulls down all data that you don't have yet from a remote repo  
