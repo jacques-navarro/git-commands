@@ -7,6 +7,25 @@ git cheat sheet
 
 `git clone <url> [directory]` clones a repository into the current directory
 
+## First time setup
+
+`git config --list --show-origin` view all settings    
+`--global user.name <user name>` set user name    
+`--global user.email <user email>` set user email address    
+`--global core.editor <text editor name>` set default text editor    
+`<setting>` check setting  
+`-e` edit local config file  
+
+### Config file locations
+1. .git/config - local  
+2. ~/.config - global  
+3. /etc/gitconfig - system
+
+## Getting help
+`man git`  
+`man git-<command>`  
+`git help <verb>` 
+
 ## Getting info
 
 `git status` displays current branch, untracked files, modified files, added files
@@ -96,19 +115,6 @@ Switch to branch you would like to merge changes into. `git checkout <branch nam
 2. `git rebase master`  
 3. `git checkout master`
 3. `git merge <branch to rebase>`
-
-## First time setup
-
-`git config --list --show-origin` view all settings    
-`--global user.name <user name>` set user name    
-`--global user.email <user email>` set user email address    
-`--global core.editor <text editor name>` set default text editor    
-`<setting>` check setting    
-
-
-## Getting help
-`git help <verb>` 
-
 
 ## Connecting to Github with SSH
 
