@@ -16,6 +16,8 @@ git cheat sheet
 `<setting>` check setting  
 `-e` edit local config file  
 
+`git config --global init.defaultBranch <branch name>` set name of default branch
+
 ### Config file locations
 1. .git/config - local  
 2. ~/.config - global  
@@ -29,6 +31,8 @@ git cheat sheet
 ## Getting info
 
 `git status` displays current branch, untracked files, modified files, added files
+
+`git ls-files` list files in index
 
 `git diff` displays what has been modified but not staged  
 `--staged` displays the what has been staged compared to the last commit  
@@ -123,3 +127,12 @@ Switch to branch you would like to merge changes into. `git checkout <branch nam
 * [Adding a new SSH key to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)  
   * use `cat ~/.ssh/<ssh public key file>` to copy ssh public key  
 * [Testing your SSH connection](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/testing-your-ssh-connection)  
+
+## Git on Ubuntu
+
+### Check Ubuntu version
+`lsb_release -a` check Ubuntu version
+
+### Add git to Personal Package Archive (PPA)
+`sudo add-apt-repository ppa:git-core/ppa`  
+`sudo apt update`
