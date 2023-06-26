@@ -9,19 +9,20 @@ git cheat sheet
 
 ## First time setup
 
-`git config --list --show-origin` view all settings    
-`--global user.name <user name>` set user name    
-`--global user.email <user email>` set user email address    
-`--global core.editor <text editor name>` set default text editor    
-`<setting>` check setting  
+`git config --list --show-origin` view all settings  
+`--global user.name "<user name>"` set user name  
+`--global user.email "<user email>"` set user email address  
+`--global core.editor "<text editor name>"` set default text editor  
+`[level] <option>` check setting  
+`[level] --unset <option>`  
 `-e` edit local config file  
 
 `git config --global init.defaultBranch <branch name>` set name of default branch
 
-### Config file locations
-1. .git/config - local  
-2. ~/.config - global  
-3. /etc/gitconfig - system
+### Config levels and file locations
+1. `.git/config --local` (default)  
+2. `~/.config --global`  
+3. `/etc/gitconfig --system`  
 
 ## Getting help
 `man git`  
