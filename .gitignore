@@ -1,3 +1,7 @@
 # vim backup files #
 ####################
 *~
+
+# IntelliJ #
+############
+.idea/
