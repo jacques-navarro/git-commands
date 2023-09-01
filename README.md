@@ -66,19 +66,56 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 
 `git checkout -- <file>` discard files which are not staged
 
-## Working with remotes
+## Working with branches
 
-`git remote` displays which remote servers have been configured  
+`git branch` - lists all branches  
+`git <branch>` - creates a new branch  
+`--all` - display local and remote branches  
+`-d <branch>` - delete branch which has been merged  
+`-D` <branch> - delete branch that has not been merged  
+`-v` display last commit on each branch  
+`--merged` display only branches which have been merged into current branch  
+`--no-merged` display only branches which have not been merged into the current branch  
+`--move <old branch name> <new branch name>` rename branch
+* `git push --set-upstream [short name] <new branch name>` to set up branch on remote
+* `git push origin --delete <old branch name>` to delete old branch on remote
+
+`git checkout <branch | sha1>` - switch to an existing branch | commit
+
+`git switch -c <branch name>` - create a new branch and switch to it automatically
+
+### Merging
+
+Switch to branch you would like to merge changes into. `git checkout <branch name>`
+
+`git merge <branch name>` merge branch into current branch
+
+### Rebasing
+1. `git checkout <branch to rebase>`
+2. `git rebase master`
+3. `git checkout master`
+4. `git merge <branch to rebase>`
+
+## Working with Remotes
+
+### Basic operations
+
+`git remote` displays which remote servers have been configured
 `-v` displays URLs stored in git for fetching and pulling  
-`add <short name> <URL - https://github.com/bunny-thief/repo_name.git>` adds new remote repository with specified short name  
-`remove <short name>` remove remote  
 `show <short name>` displays URL and branch information  
 
-`git fetch <short name>/[branch name]` pulls down all data that you don't have yet from a remote repo  
+### Add/remove/disable push
 
+`add <short name> <URL - https://github.com/bunny-thief/[repo_name].git>` adds new remote repository with specified short name  
+`remove <short name>` remove remote  
+`git remote set-url --push [short name] no_push`disable push to remote
+
+### Fetching/pulling/pushing
+`git fetch [short name]/<branch name>` pulls down all data that you don't have yet from a remote repo
 `git pull` downloads and merges remote into current code
+`git push [short name] <branch name>` push a specific branch. Only works if another commit hasn't been pushed to remote
 
-`git push [short name] <branch name>` only works if another commit hasn't been pushed to remote  
+### Add/remove remote branch
 `git push --set-upstream [short name] <new branch name>` to set up branch on remote  
 `git push [short name] --delete <branch name>` to delete branch on remote  
 
@@ -90,36 +127,7 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 3. Add remote  
  * `git remote add origin git@github.com:bunny-thief/<repo name>.git`  
 4. Set up remote upstream  
- * `git push -u [short name] <branch name>`  
-
-## Working with branches
-
-`git branch` - lists all branches  
-`git <branch>` - creates a new branch  
-`--all` - display local and remote branches  
-`-d <branch>` - delete branch which has been merged  
-`-D` <branch> - delete branch that has not been merged  
-`-v` display last commit on each branch  
-`--merged` display only branches which have been merged into current branch  
-`--no-merged` display only branches which have not been merged into the current branch  
-`--move <old branch name> <new branch name>` rename branch  
-  * `git push --set-upstream [short name] <new branch name>` to set up branch on remote  
-  * `git push origin --delete <old branch name>` to delete old branch on remote  
-
-`git checkout <branch | sha1>` - switch to an existing branch | commit  
-
-`git switch -c <branch name>` - create a new branch and switch to it automatically     
-
-### Merging
-Switch to branch you would like to merge changes into. `git checkout <branch name>`
-
-`git merge <branch name>` merge branch into current branch  
-
-### Rebasing
-1. `git checkout <branch to rebase>`  
-2. `git rebase master`  
-3. `git checkout master`
-3. `git merge <branch to rebase>`
+ * `git push -u [short name] <branch name>`
 
 ## Connecting to Github with SSH
 
