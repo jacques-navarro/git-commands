@@ -119,6 +119,9 @@ Switch to branch you would like to merge changes into. `git checkout <branch nam
 `git push --set-upstream [short name] <new branch name>` to set up branch on remote  
 `git push [short name] --delete <branch name>` to delete branch on remote  
 
+### Create local branch from remote branch
+`git checkout -b <new branch name> [short name]/<remote branch name>` create local branch from remote branch
+
 ### Push existing repo from command line
 1. Create local repo and commit changes  
 2. Create Github repo  
