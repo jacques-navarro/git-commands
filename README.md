@@ -86,9 +86,12 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 
 ### Merging
 
-Switch to branch you would like to merge changes into. `git checkout <branch name>`
-
-`git merge <branch name>` merge branch into current branch
+1. Switch to branch you would like to merge changes into
+   * `git checkout <receiving branch name>` 
+2. Merge branch with changes into current branch
+   * `git merge <merging branch name>`
+3. Delete merged branch
+   * `git branch -d <merged branch name>`
 
 ### Rebasing
 1. `git checkout <branch to rebase>`
