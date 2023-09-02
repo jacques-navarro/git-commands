@@ -66,6 +66,17 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 
 `git checkout -- <file>` discard files which are not staged
 
+### Undo last commit
+
+`git reset HEAD~1` undo last commit  
+`--soft` keep uncommitted changes  
+`--hard` remove uncommitted changes  
+
+`git revert HEAD` creates a new commit that undoes last commit
+
+Use `reset` when local changes have not been pushed to remote.
+`revert` should be used when changes have been pushed to remote but need to be undone.
+
 ### Amend last commit
 1. Make changes
 2. Add file(s)
