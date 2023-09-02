@@ -66,6 +66,13 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 
 `git checkout -- <file>` discard files which are not staged
 
+### Amend last commit
+1. Make changes
+2. Add file(s)
+   * `git add .`
+3. Amend commit without changing commit message
+   * `git commit --amend --no-edit`
+
 ## Working with branches
 
 `git branch` - lists all branches  
