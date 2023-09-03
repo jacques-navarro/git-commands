@@ -33,15 +33,21 @@ git cheat sheet
 
 `git status` displays current branch, untracked files, modified files, added files
 
-`git ls-files` list files in index
-
 `git diff` displays what has been modified but not staged  
 `--staged` displays the what has been staged compared to the last commit  
-`<hash 1> <hash 2> [file]` display difference between two commits  
+`<hash 1> <hash 2> [file]` display difference between two commits
+
+### Working with logs
 
 `git log` lists commits in reverse chronological order  
+`-<n>` shows last nth commits  
+`<commit>` only display commits that are older than a particular commit  
 `-p` (patch) shows difference introduced by each commit  
-`-<n>` shows last nth commits 
+`--all --grep='<pattern>'` limit results to commit messages that match the pattern  
+`-S <pattern>` look for commits in which the pattern was introduced or changed in the code    
+
+
+`git ls-files` list files in index
 
 `git show --abbrev-commit --name-status [HEAD~n]` displays which files were modified in specific commit  
 A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
