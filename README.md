@@ -33,6 +33,7 @@ git cheat sheet
 
 `git status` displays current branch, untracked files, modified files, added files
 
+### diff
 `git diff` displays what has been modified but not staged  
 `--staged` displays the what has been staged compared to the last commit  
 `<hash 1> <hash 2> [file]` display difference between two commits
