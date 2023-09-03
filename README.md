@@ -34,9 +34,14 @@ git cheat sheet
 `git status` displays current branch, untracked files, modified files, added files
 
 ### diff
-`git diff` displays what has been modified but not staged  
-`--staged` displays the what has been staged compared to the last commit  
+
+`git diff` difference between what has been modified but not staged  
+`--staged` difference between what has been staged compared to the last commit (HEAD)
+`HEAD` difference between working directory and last commit (HEAD)
 `<hash 1> <hash 2> [file]` display difference between two commits
+`<branch>` difference between other branch and working directory
+`<branch 1> <branch 2>` difference between committed changes in two branches
+`<branch 1>...<branch 2>` changes that occurred since branch 2 was started
 
 ### Working with logs
 
