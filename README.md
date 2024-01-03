@@ -60,7 +60,8 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 
 ## Making changes
 
-`git add <file>` stages new files and tracked files that have been modified
+`git add <file>` stages new files and tracked files that have been modified  
+`-u` stages all tracked files that have been updated
 
 `git commit` commits any  changes that have been staged. Launches editor for commit message  
 `-m` accepts inline commit message  
