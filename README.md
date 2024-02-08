@@ -1,3 +1,5 @@
+![](git-hg.png)
+
 # git-commands
 git cheat sheet
 
