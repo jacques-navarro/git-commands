@@ -98,6 +98,10 @@ Use `reset` when local changes have not been pushed to remote.
 3. Amend commit without changing commit message
    - `git commit --amend --no-edit`
 
+### Amend commit message
+
+`git commit --amend`
+
 ## Working with branches
 
 `git branch` - lists all branches  
