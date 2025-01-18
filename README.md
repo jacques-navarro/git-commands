@@ -50,6 +50,7 @@
 `-<n>` shows last nth commits  
 `<commit>` only display commits that are older than a particular commit  
 `-p` (patch) shows difference introduced by each commit  
+`--follow -- <file name>` list commits for a specific file  
 `--all --grep='<pattern>'` limit results to commit messages that match the pattern  
 `-S <pattern>` look for commits in which the pattern was introduced or changed in the code
 
