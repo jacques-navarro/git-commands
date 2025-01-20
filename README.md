@@ -91,6 +91,10 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 Use `reset` when local changes have not been pushed to remote.
 `revert` should be used when changes have been pushed to remote but need to be undone.
 
+### Undo initial commit 
+ 
+`git update-ref -d HEAD`
+
 ### Amend last commit
 
 1. Make changes
