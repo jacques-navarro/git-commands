@@ -86,6 +86,9 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 `--soft` keep uncommitted changes  
 `--hard` remove uncommitted changes
 
+#### Commit using previous commit message
+`git commit -c ORGIG_HEAD`
+
 `git revert HEAD` creates a new commit that undoes last commit
 
 Use `reset` when local changes have not been pushed to remote.
