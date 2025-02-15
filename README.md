@@ -169,8 +169,8 @@ Use `reset` when local changes have not been pushed to remote.
 ### Rebasing
 
 1. `git checkout <branch to rebase>`
-2. `git rebase master`
-3. `git checkout master`
+2. `git rebase main`
+3. `git checkout main`
 4. `git merge <branch to rebase>`
 
 ## Working with Remotes
