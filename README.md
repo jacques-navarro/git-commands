@@ -28,6 +28,28 @@
 
 `git config --global alias.<alias> <command to alias>`
 
+### Aliased commands
+
+`list aliases`
+```
+alias.alias 'config --get-regexp ^alias'
+```
+
+`log graph`
+```
+alias.lg log --color --graph --pretty=format:'%Cred%h%Creset - %Cgreen%<(16)%ah%Creset %C(bold blue)%<(16)<%an>%Creset %C(auto)%d%Creset%s' --abbrev-commit
+```
+
+`add all files except test Java test files`
+```
+lias.nt=add . -- ":!src/test/*"
+```
+
+`log online with date`
+```
+alias.ol=log --pretty=format:'%C(auto)%h%Creset %Cgreen%<(16)%ah%Creset %C(auto)%d%Creset %s'
+```
+
 ## Getting help
 
 `man git`  
