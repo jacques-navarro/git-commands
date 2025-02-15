@@ -24,6 +24,10 @@
 2. `~/.config --global`
 3. `/etc/gitconfig --system`
 
+## Alias
+
+`git config --global alias.<alias> <command to alias>`
+
 ## Getting help
 
 `man git`  
