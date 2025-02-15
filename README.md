@@ -100,6 +100,8 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 
 `git mv <original file> <renamed file>` move/rename a file or rename
 
+`git filter-branch --tree-filter 'rm -f <file name>' HEAD` remove a file from all commits
+
 ## Undoing things
 
 `git reset HEAD <file>` unstage files
