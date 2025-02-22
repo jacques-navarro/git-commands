@@ -28,6 +28,7 @@
 
 `git config --global alias.<alias> <command to alias>`
 
+[Aliased commands](alias.md)
 
 ## Getting help
 
