@@ -95,7 +95,7 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 `--hard` remove uncommitted changes
 
 #### Commit using previous commit message
-`git commit -c ORGIG_HEAD`
+`git commit -c ORIG_HEAD`
 
 #### reset vs revert
 
