@@ -18,11 +18,13 @@
 
 `git config --global init.defaultBranch <branch name>` set name of default branch
 
-### Config levels and file locations
+### Config levels
 
-1. `.git/config --local` (default)
-2. `~/.config --global`
-3. `/etc/gitconfig --system`
+| Config level | Flag     | File location  | Description                         |
+|--------------|----------|----------------|-------------------------------------|
+| System       | --system | /etc/gitconfig | Applied to all users on system      |
+| User         | --global | ~/gitconfig    | Applied to currently logged in user |
+| Repo         | --local  | .git/config    | Applied to a specific repo          |
 
 ## Alias
 
