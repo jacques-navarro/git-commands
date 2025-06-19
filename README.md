@@ -6,17 +6,15 @@
 
 `git clone <url> [directory]` clones a repository into the current directory
 
-## First time setup
+## Config
 
 `git config --list --show-origin` view all settings  
-`--global user.name "<user name>"` set user name  
-`--global user.email "<user email>"` set user email address  
-`--global core.editor "<text editor name>"` set default text editor  
-`[level] <option>` check setting  
-`[level] --unset <option>`  
+`[*level] <section.key> <value>` assign value to specified key  
+`--get([-all] | *level) [--show-origin] <section.key>` display value of specified key  
+`--unset [*level] <option>`  
 `-e` edit local config file
 
-`git config --global init.defaultBranch <branch name>` set name of default branch
+\*levels = `--system`, `--global`, `--local`
 
 ### Config levels
 
@@ -25,6 +23,14 @@
 | System       | --system | /etc/gitconfig | Applied to all users on system      |
 | User         | --global | ~/gitconfig    | Applied to currently logged in user |
 | Repo         | --local  | .git/config    | Applied to a specific repo          |
+
+## First time setup
+
+`git config`  
+`--global user.name "<user name>"` set user name  
+`--global user.email "<user email>"` set user email address  
+`--global core.editor "<text editor name>"` set default text editor  
+`--global init.defaultBranch <branch name>` set name of default branch
 
 ## Alias
 
