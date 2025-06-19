@@ -21,7 +21,7 @@
 ### Config levels
 
 | Config level | Flag     | File location  | Description                         |
-|--------------|----------|----------------|-------------------------------------|
+| ------------ | -------- | -------------- | ----------------------------------- |
 | System       | --system | /etc/gitconfig | Applied to all users on system      |
 | User         | --global | ~/gitconfig    | Applied to currently logged in user |
 | Repo         | --local  | .git/config    | Applied to a specific repo          |
@@ -97,6 +97,7 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 `--hard` remove uncommitted changes
 
 #### Commit using previous commit message
+
 `git commit -c ORIG_HEAD`
 
 #### reset vs revert
@@ -106,8 +107,8 @@ A = added, C = Copied, D = Deleted, M = Modified, R = Renamed
 Use `reset` when local changes have not been pushed to remote.
 `revert` should be used when changes have been pushed to remote but need to be undone.
 
-### Undo initial commit 
- 
+### Undo initial commit
+
 `git update-ref -d HEAD`
 
 ### Amend last commit
@@ -121,6 +122,16 @@ Use `reset` when local changes have not been pushed to remote.
 ### Amend commit message
 
 `git commit --amend`
+
+## Stashing
+
+`git stash` saves local modifications  
+`-a` include ignored and untracked files  
+`list` list stashed away modifications  
+`show -p <n>` show stash entry in patch form, n=**0** shows the last stash entry  
+`pop` remove single stash and apply to current working tree  
+`apply` like **pop** but does not remove from stash list  
+`drop` remove single stash entry from list of stash entries
 
 ## Working with branches
 
