@@ -18,6 +18,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 ### Log one-line with date
 ```
 git config --global alias.ol "log --pretty=format:'%C(auto)%h%Creset %Cgreen%<(16)%ah%Creset %C(auto)%d%Creset %s'"
+```
 
 ### Log one-line, limit to today's commits
 
