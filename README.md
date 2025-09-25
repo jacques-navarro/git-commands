@@ -34,7 +34,9 @@
 
 ## Alias
 
-`git config --global alias.<alias> <command to alias>`
+`git config --global alias.<alias> <command to alias>` set alias
+
+`git config --global --unset alias.<alias>` remove alias
 
 [Aliased commands](alias.md)
 
