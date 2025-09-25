@@ -24,4 +24,9 @@ git config --global alias.ol "log --pretty=format:'%C(auto)%h%Creset %Cgreen%<(1
 ```
 git config --global alias.olt "log --pretty=format:'%C(auto)%h%Creset %Cgreen%<(16)%ah%Creset %C(auto)%d%Creset %s' --since='1 hour'"
 ```
+
+### Log one-line, limit to yesterday's commmits
+
+```
+git config --global alias.olt "log --pretty=format:'%C(auto)%h%Creset %Cgreen%<(16)%ah%Creset %C(auto)%d%Creset %s' --since='24 hour' --until='3 hour'"
 ```
